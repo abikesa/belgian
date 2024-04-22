@@ -5,3 +5,30 @@
 - Malt
 - Sugar
 - Hops
+
+![](frontier.png)
+ 
+ > *Music is the ultimate metaphor. Doesn't that `resonate` with you?*
+ 
+                                        1. Root
+                                               \
+                              2. Pentatonic -> 4. Chromatic -> 5. Temperament -> 6. Expression
+                                               /
+                                               3. Diatonic
+
+
+
+### Man/Frontiers/Malum
+##### (Alterations/Meaning: ♭♭7,♭9,♯9,♯11,♭13) 
+5. Temperament/Heretical - `IPA`
+6. Expression - `Trappiste`
+### Art/Bustle/Se
+##### (Extensions/Cast: 11th, 13th)
+3. Diatonic/Mundane - `Coors` (adjuncts like corn syrup or rice to lighten the flavor)
+4. Chromatic - `Stout`
+### God/Order/Prohibitum
+##### (Foundation/Stage: 1st, 3rd, 5th, 7th, 9th)
+1. Root/Ecclessiastical - `Reinheitsgebot`; the Bavarian Purity Law of 1516
+2. Pentatonic - `Hefeweizen` 
+
+
