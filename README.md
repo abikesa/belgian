@@ -20,16 +20,16 @@
 
 ### Man/Frontiers/Malum
 ##### (Alterations/Meaning: ♭♭7,♭9,♯9,♯11,♭13) 
-5. Temperament/Heretical - `Trappiste`
-6. Expression - `Craft`
+5. Temperament/Heretical - `Trappiste`; unique yeast strains cultivated and preserved monasteric tradition, natural
+6. Expression - `Craft`; commercially available yeast strains, spices, even chocolate 
 ### Art/Bustle/Se
 ##### (Extensions/Cast: 11th, 13th)
-3. Diatonic/Mundane - `Lager` (adjuncts like corn syrup or rice to lighten the flavor)
-4. Chromatic - `Ale`
+3. Diatonic/Mundane - `Lager`; cornsyrup
+4. Chromatic - `Ale`; sugar
 ### God/Order/Prohibitum
 ##### (Foundation/Stage: 1st, 3rd, 5th, 7th, 9th)
 1. Root/Ecclessiastical - `Reinheitsgebot`; the Bavarian Purity Law of 1516
-2. Pentatonic - `Hefeweizen` 
+2. Pentatonic - `Hefeweizen`; water, malt, hops
 
 # Temperament
 
