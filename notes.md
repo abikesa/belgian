@@ -1,3 +1,4 @@
+![](https://robbedford.files.wordpress.com/2017/08/weihenstephanerhef02.jpg?w=800)
 
 ### Man/Frontiers/Malum - Tradition vs. Craft
 5. **Temperament/Heretical - Trappiste**: This category fits Trappist beers, which you described well. They are brewed in a monastic tradition with unique yeast strains, much like Stille Nacht uses specific ingredients to create its distinctive profile. However, Trappist beers are more about preserving a long-standing tradition within a spiritual context, rather than pushing the boundaries of what beer can be.
