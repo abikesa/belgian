@@ -1,3 +1,5 @@
+That's a fascinating analogy! Delirium Tremens' complexity, with its various flavors and aromas, could indeed be likened to the improvisational and dynamic nature of jazz. On the other hand, Weihenstephaner Hefeweissbier's smoothness and traditional, almost reverent quality could parallel the structured and melodic nature of a hymn. Do you find this analogy reflects the experience of these beers for you?
+
 # Stille Nochte
 
 > Stille Nacht (Silent Night) is a prestige beer from De Dolle Brouwers, brewed for Christmas. It has a very potent beer (12% alc/vol). It has been boiling for many hours, brewed with pale malt with white candy sugar in the kettle. The Nugget hops gives an extra bitterness to balance the extreme sweetness due to the density. The `taste triangle` is completed with some acidity of the fermentation. It is a very interesting beer to age.
