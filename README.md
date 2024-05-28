@@ -84,7 +84,7 @@ Here is the generated image:
 > One needs challenges, a worthy adversary, the embrace of more remote overtones of the harmonic series - ***Q**ualities*
 
 - Westmalle Dubbel, $7$ %
-- Duvel, $8$ %
+- Duvel, $8.5$ %
 - Truth, $8.7$ %
 - Westmalle Tripel, $9.5$ %
-- St. Bernadus Abt 12, $10.2$ %
+- St. Bernadus Abt Twelve, $10.2$ %
