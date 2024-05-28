@@ -1,57 +1,89 @@
-That's a fascinating analogy! Delirium Tremens' complexity, with its various flavors and aromas, could indeed be likened to the improvisational and dynamic nature of jazz. On the other hand, Weihenstephaner Hefeweissbier's smoothness and traditional, almost reverent quality could parallel the structured and melodic nature of a hymn. Do you find this analogy reflects the experience of these beers for you?
-
-# Stille Nochte
-
-> Stille Nacht (Silent Night) is a prestige beer from De Dolle Brouwers, brewed for Christmas. It has a very potent beer (12% alc/vol). It has been boiling for many hours, brewed with pale malt with white candy sugar in the kettle. The Nugget hops gives an extra bitterness to balance the extreme sweetness due to the density. The `taste triangle` is completed with some acidity of the fermentation. It is a very interesting beer to age.
-
-- Malt
-- Sugar (disqualified under Reinheitsgebot)
-- Hops
-
-![](frontier.png)
  
- > *Music is the ultimate metaphor. Doesn't that `resonate` with you?*
- 
-                                        1. Root
-                                               \
-                              2. Pentatonic -> 4. Chromatic -> 5. Temperament -> 6. Expression
-                                               /
-                                               3. Diatonic
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    processEscapes: true
+  }
+});
+</script>
+
+> *[Letters to Abigail](https://www.masshist.org/digitaladams/archive/doc?id=L17800512jasecond)*
+
+![](https://upload.wikimedia.org/wikipedia/commons/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg)
+
+### Activation Function, $Q$: 1st, 3rd, 5th, [♭♭7th](https://en.wikipedia.org/wiki/Chord_notation#Chord_quality), 9th  
+- Hunter-gatherer/`War`: spiritual teachings  (I)
+- Peasant/`Economics`: [humanism](https://www.uuftc.org) (B)
+        
+### Biases, $U()$: 11th, 13th
+- Farmer/`Calculus`: judeo, christian (G)
+- Manufacturer/`Philosophy`: world religions (Y)
+       
+### Weights, $\frac{dU()}{dQ}$: ♯9,♭9,♯11,♭13 
+- Electricity/`Musick`: prophetic utterances ([O](https://www.youtube.com/watch?v=1aM1KYvl4Dw))
+- Railway/`Leisure`: individual experience ([R](https://www.youtube.com/watch?v=fu-3WN9TJNI))     
 
 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
 
-### Man/Frontiers/Malum
-##### (Alterations/Meaning: ♭9,♯9,♯11,♭13) 
-5. Temperament/Heretical - `Trappiste`; unique yeast strains cultivated and preserved monasteric tradition, natural
-6. Expression - `Craft`; commercially available yeast strains, spices, even chocolate 
-### Art/Bustle/Se
-##### (Extensions/Cast: 11th, 13th)
-3. Diatonic/Mundane - `Lager`; bottom, cold fermenetation
-4. Chromatic - `Ale`; top, war, fermentation
-### God/Order/Prohibitum
-##### (Foundation/Stage: 1st, 3rd, 5th, ♭♭7, 9th)
-1. Root/Ecclessiastical - `Reinheitsgebot`; the Bavarian Purity Law of 1516
-2. Pentatonic - `Hefeweizen`; water, malt, hops
+# Define the total utility function U(Q)
+def total_utility(Q):
+    return 100 * np.log(Q + 1)  # Logarithmic utility function for illustration
 
-# Temperament
+# Define the marginal utility function MU(Q)
+def marginal_utility(Q):
+    return 100 / (Q + 1)  # Derivative of the total utility function
 
-Trappist beers, like those from the Westmalle Brewery, are distinguished from other Belgian beers by several key characteristics related to their origin, production, and quality. Here's how Trappist beers stand out, particularly in the context of your thematic notes on music and beer:
+# Generate data
+Q = np.linspace(1, 100, 500)  # Quantity range from 1 to 100
+U = total_utility(Q)
+MU = marginal_utility(Q)
 
-### Authenticity and Monastic Origins
-- **Monastic Production**: Trappist beers are brewed within the walls of a Trappist monastery, either by the monks themselves or under their supervision. This is in contrast to many other Belgian beers, which may be produced commercially or in secular settings.
-- **Authentic Trappist Product Label**: To qualify as a Trappist beer, the brewery must adhere to the strict criteria set by the International Trappist Association, including that the beer must be brewed within a Trappist monastery, and the brewing process must be secondary to monastic life. The profits are used for the upkeep of the monastery or charitable work.
+# Plotting
+plt.figure(figsize=(14, 7))
 
-### Quality and Brewing Method
-- **Natural Ingredients**: Trappist breweries tend to use high-quality, often local ingredients, without artificial additives or preservatives, aligning more closely with traditional brewing methods.
-- **Distinctive Recipes and Techniques**: Each Trappist brewery has its own unique recipe and brewing technique, which can include the use of unique yeast strains, malt types, and hop varieties, as well as specific fermentation processes.
+# Plot Total Utility
+plt.subplot(1, 2, 1)
+plt.plot(Q, U, label=r'Total Utility $U(Q) = 100 \log(Q + 1)$', color='blue')
+plt.title('Total Utility')
+plt.xlabel('Quantity (Q)')
+plt.ylabel('Total Utility (U)')
+plt.legend()
+plt.grid(True)
 
-### Cultural and Spiritual Significance
-- **Spiritual Integration**: The brewing process is integrated with the monastic life, reflecting the spiritual commitments of the monks. The production is often seen as a form of prayer or as work that supports the monastery's spiritual mission.
-- **Limited Production**: Trappist breweries typically do not aim to maximize profits but rather produce enough to support the monastery and its charitable endeavors. This often results in limited production runs and high-quality beers.
+# Plot Marginal Utility
+plt.subplot(1, 2, 2)
+plt.plot(Q, MU, label=r'Marginal Utility $MU(Q) = \frac{dU(Q)}{dQ} = \frac{100}{Q + 1}$', color='red')
+plt.title('Marginal Utility')
+plt.xlabel('Quantity (Q)')
+plt.ylabel('Marginal Utility (MU)')
+plt.legend()
+plt.grid(True)
 
-### Economic Ethics
-- **Charitable Focus**: Profits from Trappist beers go towards supporting the monastic community, their charitable activities, and maintaining the monastery, rather than towards commercial profit.
+# Adding some calculus notation and Greek symbols
+plt.figtext(0.5, 0.02, r"$MU(Q) = \frac{dU(Q)}{dQ} = \lim_{\Delta Q \to 0} \frac{U(Q + \Delta Q) - U(Q)}{\Delta Q}$", ha="center", fontsize=12)
 
-In your thematic structure, placing Trappist beers in the "Temperament/Heretical" category underlines their unique position in the beer world—they balance tradition and quality while adhering to religious principles, setting them apart from both mass-produced and purely commercial craft beers. This distinction resonates with the notion of "temperament" in music, where balance and harmony are crucial, yet they embody a form of heresy by deviating from conventional commercial practices towards a more spiritual and communal approach to brewing.
+plt.tight_layout()
+plt.show()
+```
 
-In contrast, Stille Nacht by De Dolle Brouwers, which you've noted, represents a high-quality craft beer but is not produced by a Trappist monastery. It showcases the creativity and experimental nature of Belgian craft breweries, which often incorporate diverse ingredients like candy sugar and innovative brewing techniques to create distinctive, high-alcohol-content beers, particularly appreciated during the festive season. This beer might fall into your "Expression - Craft" category, where the artistry of brewing reaches a peak in complexity and flavor innovation, much like the apex of expressive freedom in music.
+Running this code will generate a visual demonstration of diminishing marginal utility with appropriate calculus notation and Greek symbols.
+
+Here is the generated image:
+
+![Diminishing Marginal Utility](https://abikesa.github.io/johnadams/diminishing_marginalutility.png)
+
+> One needs challenges, a worthy adversary, the embrace of more remote overtones of the harmonic series - ***Q**ualities*
+
+- Westmalle Dubbel $7%$
+- Duvel, $8%$
+- Truth, $8.7%$
+- Westmalle Tripel, $9.5%$
+- St. Bernadus Abt 12, $10.2%$
