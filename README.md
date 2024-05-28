@@ -1,4 +1,4 @@
- 
+```html
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
@@ -11,6 +11,7 @@ MathJax.Hub.Config({
   }
 });
 </script>
+```
 
 > *[Letters to Abigail](https://www.masshist.org/digitaladams/archive/doc?id=L17800512jasecond)*
 
@@ -82,8 +83,8 @@ Here is the generated image:
 
 > One needs challenges, a worthy adversary, the embrace of more remote overtones of the harmonic series - ***Q**ualities*
 
-- Westmalle Dubbel $7%$
-- Duvel, $8%$
-- Truth, $8.7%$
-- Westmalle Tripel, $9.5%$
-- St. Bernadus Abt 12, $10.2%$
+- Westmalle Dubbel, $7$ %
+- Duvel, $8$ %
+- Truth, $8.7$ %
+- Westmalle Tripel, $9.5$ %
+- St. Bernadus Abt 12, $10.2$ %
