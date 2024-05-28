@@ -87,4 +87,4 @@ Here is the generated image:
 - Duvel, $8.5$ %
 - Truth, $8.7$ %
 - Westmalle Tripel, $9.5$ %
-- St. Bernadus Abt Twelve, $10.2$ %
+- St. Bernardus `Abt 12`, $10$ %
