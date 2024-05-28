@@ -16,6 +16,7 @@ MathJax.Hub.Config({
 > *[Letters to Abigail](https://www.masshist.org/digitaladams/archive/doc?id=L17800512jasecond)*
 
 ![](https://upload.wikimedia.org/wikipedia/commons/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg)
+![](craft.png)
 
 ### Activation Function, $Q$: 1st, 3rd, 5th, [♭♭7th](https://en.wikipedia.org/wiki/Chord_notation#Chord_quality), 9th  
 - Hunter-gatherer/`War`: spiritual teachings  (I)
