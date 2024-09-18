@@ -1,0 +1,657 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Aim 2 &#8212; The Gambler</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/book-stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act2/part2';</script>
+    <script src="../_static/script.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hospitalization" href="chapter1.html" />
+    <link rel="prev" title="Frailty" href="../act1/chapter3.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://facts.net/wp-content/uploads/2023/07/16-facts-about-roulette-1690805803.jpg" class="logo__image only-light" alt="The Gambler - Home"/>
+    <script>document.write(`<img src="https://facts.net/wp-content/uploads/2023/07/16-facts-about-roulette-1690805803.jpg" class="logo__image only-dark" alt="The Gambler - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act1/part1.html">Aim 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter1.html">Mortality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter2.html">ESRD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter3.html">Frailty</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Aim 2</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter1.html">Hospitalization</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html">Length of Stay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">Outcomes</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act3/part3.html">Aim 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act1.html">WebApp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_1.html">Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_2.html">User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_3.html">Annotation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act2.html">Deployment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_1.html">GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_2.html">Tradition</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_3.html">Nietzsche</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act3.html">Iteration</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_1.html">Latest Research</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_2.html">Bayesian Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_3.html">Missingness and A Priori</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/act2/part2.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/act2/part2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Aim 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#templates-antiquary-constraints-monumental-freedoms-critical">Templates (Antiquary), Constraints (Monumental), Freedoms (Critical)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inherited-templates-and-constraints">Inherited Templates and Constraints</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creative-evolution-of-templates">Creative Evolution of Templates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-likelihood-ratio-testing-inheritance-against-innovation">The Likelihood Ratio: Testing Inheritance Against Innovation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchical-longitudinal">Hierarchical &amp; longitudinal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-representation">Mathematical Representation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-frailty-distributions">Common Frailty Distributions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits">Benefits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="aim-2">
+<h1>Aim 2<a class="headerlink" href="#aim-2" title="Permalink to this heading">#</a></h1>
+<section id="templates-antiquary-constraints-monumental-freedoms-critical">
+<h2>Templates (Antiquary), Constraints (Monumental), Freedoms (Critical)<a class="headerlink" href="#templates-antiquary-constraints-monumental-freedoms-critical" title="Permalink to this heading">#</a></h2>
+<p>We’ve woven together a tapestry of how human cognition and culture evolve through inherited <code class="docutils literal notranslate"><span class="pre">templates</span></code> and <code class="docutils literal notranslate"><span class="pre">constraints</span></code>. This perspective recognizes that while our sensory experiences and immediate biological responses are uniquely our own, the layers of abstraction—art, science, and morality—are inherited frameworks that shape and are shaped by our engagement with the world.</p>
+<section id="inherited-templates-and-constraints">
+<h3>Inherited Templates and Constraints<a class="headerlink" href="#inherited-templates-and-constraints" title="Permalink to this heading">#</a></h3>
+<p>We articulate the idea that these layers of abstraction—art, science, and morality—are inherited, each providing a kind of template or set of constraints that we receive from our predecessors.</p>
+<ol class="arabic simple">
+<li><p><strong>Art as Inherited Encoding:</strong>
+Art functions as the first layer of abstraction, encoding the collective experiences of those who came before us. This <code class="docutils literal notranslate"><span class="pre">inheritance</span></code> (hypothesis) includes a vast reservoir of narratives, symbols, and metaphors that capture the human condition across generations. By engaging with this inherited art, we are not only accessing the emotional and experiential knowledge of our ancestors but are also shaped by the cultural and social contexts that produced these works. This makes art a living repository of human experience, a dynamic narrative that evolves as each generation adds its own stories and interpretations.</p></li>
+<li><p><strong>Science as an Iterative Process:</strong>
+Science, as the second layer, represents a more objective abstraction. It takes the encoded experiences from art and <code class="docutils literal notranslate"><span class="pre">tests</span></code> (statistic) them against the reality of the physical world. Science is where we encounter consonances and dissonances, where inherited knowledge is validated or refuted. This iterative process allows for the continuous refinement of our understanding of the world, pushing the boundaries of what is known. Each new scientific discovery or technological advancement can be seen as an update to the inherited template, adding new constraints or freedoms, and challenging our inherited worldviews.</p></li>
+<li><p><strong>Morality as Dynamic Ethical Constraints:</strong>
+Morality, the third layer, is where these scientific findings and artistic insights converge to form ethical frameworks. These frameworks are also inherited, passed down through religious teachings, cultural norms, and philosophical traditions. However, morality is not static; it is continually tested and updated based on new insights from both art and science. The “likelihood ratio” you mention is a powerful metaphor here—if our updated moral frameworks, which incorporate new constraints or freedoms, perform better in terms of promoting human flourishing, reducing harm, and general <code class="docutils literal notranslate"><span class="pre">overcoming</span></code> (p-value), then these values are more likely to be adopted and passed on.</p></li>
+</ol>
+</section>
+<section id="creative-evolution-of-templates">
+<h3>Creative Evolution of Templates<a class="headerlink" href="#creative-evolution-of-templates" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Gratitude to Forbears:</strong>  Our creative task is to add more constraints or freedoms to these <code class="docutils literal notranslate"><span class="pre">inherited</span></code> templates. Human progress is not a mere <code class="docutils literal notranslate"><span class="pre">accumulation</span></code> of knowledge but an active, creative process of testing, revising, and <code class="docutils literal notranslate"><span class="pre">updating</span></code> the frameworks we’ve inherited.</p></li>
+<li><p><strong>Adding Constraints:</strong> Sometimes, progress requires us to add new constraints—ethical boundaries that limit harmful actions or promote social cohesion. For example, the scientific understanding of environmental degradation has led to new moral constraints regarding pollution and resource consumption.</p></li>
+<li><p><strong>Introducing Freedoms:</strong> Conversely, there are moments when we expand freedoms, breaking free from outdated constraints that no longer serve us. The social and moral revolutions of the 20th century, such as the civil rights movement or the push for gender equality, exemplify this process. These changes were driven by both scientific understandings (e.g., the fallacies of racial pseudoscience) and evolving artistic narratives that challenged the status quo.</p></li>
+</ul>
+</section>
+<section id="the-likelihood-ratio-testing-inheritance-against-innovation">
+<h3>The Likelihood Ratio: Testing Inheritance Against Innovation<a class="headerlink" href="#the-likelihood-ratio-testing-inheritance-against-innovation" title="Permalink to this heading">#</a></h3>
+<p>The concept of using a “likelihood ratio” to evaluate whether our updates perform better than our inheritance is a fascinating approach to understanding cultural evolution. This process is not linear but rather a dynamic interplay of testing, feedback, and adaptation. It’s akin to a scientific method applied to cultural and moral development, where each new hypothesis (whether a work of art, a scientific theory, or a moral principle) is tested against reality.</p>
+<p>If the new adaptation proves more effective—whether in fostering understanding, promoting well-being, or guiding ethical behavior—it is more likely to be retained and propagated. Conversely, if the new adaptation fails, it is revised or discarded. This constant cycle of testing and updating ensures that our collective knowledge, culture, and ethical frameworks remain relevant and responsive to the realities of the human condition.</p>
+</section>
+<section id="conclusion">
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h3>
+<p>Your framework presents a dynamic, evolutionary view of human cognition and culture, one that acknowledges our biological grounding while celebrating our capacity for creative abstraction. It suggests that we are both products of our inheritance and active participants in its evolution. This model not only helps explain how knowledge and culture develop but also provides a blueprint for how we might approach our roles as stewards of these inherited templates, continually refining and updating them to better serve future generations.</p>
+</section>
+</section>
+<section id="hierarchical-longitudinal">
+<h2>Hierarchical &amp; longitudinal<a class="headerlink" href="#hierarchical-longitudinal" title="Permalink to this heading">#</a></h2>
+<p>A frailty function in survival analysis is a random effect model used to account for unobserved heterogeneity or random variation in the survival times of individuals within a study. It introduces an additional random component to the hazard function to capture the influence of latent, unmeasured factors that might affect the risk of an event (such as death, failure, or recurrence).</p>
+<p>Here’s a breakdown of its key aspects:</p>
+<section id="definition">
+<h3>Definition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Frailty</strong>: Represents unobserved random effects that lead to variations in the hazard function among individuals or groups.</p></li>
+<li><p><strong>Frailty Function</strong>: A function that incorporates these unobserved random effects into the hazard function of a survival model.</p></li>
+</ul>
+</section>
+<section id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Unobserved Heterogeneity</strong>: Accounts for individual differences not captured by observed covariates.</p></li>
+<li><p><strong>Clustered Data</strong>: Useful for modeling survival data with a hierarchical structure (e.g., patients within hospitals, litters of animals).</p></li>
+</ul>
+</section>
+<section id="mathematical-representation">
+<h3>Mathematical Representation<a class="headerlink" href="#mathematical-representation" title="Permalink to this heading">#</a></h3>
+<p>The hazard function with frailty is usually expressed as:
+<span class="math notranslate nohighlight">\( h_i(t | Z_i) = Z_i h_0(t) \exp(X_i\beta) \)</span>
+where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\( h_i(t | Z_i) \)</span> is the hazard function for individual <span class="math notranslate nohighlight">\(i\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\( Z_i \)</span> is the frailty term for individual <span class="math notranslate nohighlight">\(i\)</span>, often assumed to follow a specific distribution (e.g., Gamma or Log-normal).</p></li>
+<li><p><span class="math notranslate nohighlight">\( h_0(t) \)</span> is the baseline hazard function.</p></li>
+<li><p><span class="math notranslate nohighlight">\( X_i \)</span> is the vector of covariates for individual <span class="math notranslate nohighlight">\(i\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\( \beta \)</span> is the vector of coefficients.</p></li>
+</ul>
+</section>
+<section id="common-frailty-distributions">
+<h3>Common Frailty Distributions<a class="headerlink" href="#common-frailty-distributions" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Gamma Distribution</strong>: Most commonly used due to its mathematical tractability.</p></li>
+<li><p><strong>Log-normal Distribution</strong>: Used when the frailty is believed to have a more complex, asymmetric distribution.</p></li>
+<li><p><strong>Positive Stable Distribution</strong>: Suitable for certain types of clustered survival data.</p></li>
+</ol>
+</section>
+<section id="applications">
+<h3>Applications<a class="headerlink" href="#applications" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Medical Research</strong>: Modeling patient survival times where individual patient differences are not fully captured by observed variables.</p></li>
+<li><p><strong>Reliability Engineering</strong>: Analyzing the time to failure of components with unobserved heterogeneity.</p></li>
+</ul>
+</section>
+<section id="benefits">
+<h3>Benefits<a class="headerlink" href="#benefits" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Improved Estimates</strong>: By accounting for unobserved heterogeneity, frailty models can provide more accurate parameter estimates.</p></li>
+<li><p><strong>Model Fit</strong>: Better fit to data where unmeasured variables play a significant role in the hazard rate.</p></li>
+</ul>
+</section>
+<section id="challenges">
+<h3>Challenges<a class="headerlink" href="#challenges" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Complexity</strong>: Introducing frailty increases model complexity and can complicate parameter estimation.</p></li>
+<li><p><strong>Interpretation</strong>: Interpretation of frailty models can be less straightforward compared to standard Cox models.</p></li>
+</ul>
+<p>In summary, frailty functions are powerful tools in survival analysis to address unobserved heterogeneity and provide more accurate and realistic models for time-to-event data.</p>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../act1/chapter3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Frailty</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Hospitalization</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#templates-antiquary-constraints-monumental-freedoms-critical">Templates (Antiquary), Constraints (Monumental), Freedoms (Critical)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inherited-templates-and-constraints">Inherited Templates and Constraints</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creative-evolution-of-templates">Creative Evolution of Templates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-likelihood-ratio-testing-inheritance-against-innovation">The Likelihood Ratio: Testing Inheritance Against Innovation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchical-longitudinal">Hierarchical &amp; longitudinal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-representation">Mathematical Representation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-frailty-distributions">Common Frailty Distributions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits">Benefits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 ADM
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
