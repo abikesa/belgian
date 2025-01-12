@@ -407,19 +407,6 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="orient">
 <h1>Orient<a class="headerlink" href="#orient" title="Permalink to this heading">#</a></h1>
-<p>The G3 presynaptic ganglia occupy a pivotal role in the neural network, serving as an intermediary in the dynamic negotiation between <strong>Principal</strong> (the “Price” node) and <strong>Agent</strong> (represented by N1-N5 in the Input/AgenticAI layer). Situated within the <strong>Hidden/GenerativeAI layer</strong>, G3 functions as a critical decision-making node, mediating synaptic signals that flow downstream through descending tracts and shaping reflex arcs from G1 and G2—the cranial nerve and dorsal root ganglia. This position places G3 at the heart of an agency problem, balancing the Principal’s overarching goals with the Agent’s local autonomy.</p>
-<p>From an agency theory perspective, G3 arbitrates the inherent tension between achieving systemic efficiency and allowing localized decision-making flexibility. The Principal, represented by immutable rules such as life, cosmos, and the negotiation of “means” and “ends,” sets the strategic directives for the network. Meanwhile, N1-N5, as Agents, operate within the input layer, responding to immediate stimuli and processing localized data. G3 ensures that these Agents do not deviate excessively from the Principal’s overarching goals, modulating their autonomy through synaptic control mechanisms. This dynamic reflects the neural equivalent of contract design, where incentives and constraints are balanced to align local actions with global objectives.</p>
-<p>The network visualization reinforces this agency theory dynamic, with <strong>Principal</strong> (formerly “Price”) positioned in the <strong>Pre-Input/WorldRules layer</strong>, driving directives downstream. G3, symbolized in <strong>light green</strong>, serves as the generative nexus between the hidden layer and the inputs, ensuring alignment between the sympathetic (lightsalmon) and parasympathetic (paleturquoise) systems. The Agents, embodied in N1-N5, are visualized as <strong>paleturquoise</strong> nodes, representing their sensitivity to incoming data and their role in executing the Principal’s strategic goals. The color and placement of these nodes highlight the layered negotiation inherent in the system, where competing signals and demands must be synthesized into coherent actions.</p>
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/7k1ehaE0bdU?start=260" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../../_images/blanche.png"><img alt="../../_images/blanche.png" src="../../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 21 </span><span class="caption-text"><em>World Rules vs. Misinformation</em>. The very point of intelligence is to compare the response to patterns of information that yield a reflex and the response to more deliberation. Parsing the case vs. control is critical for inference.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Agency theory’s hallmark issue—how to ensure alignment between a Principal and its Agents—is echoed in G3’s modulation of reflex arcs and decision pathways. Reflex suppression via descending tracts reflects an explicit “contract” by which G3 enforces constraints on Agent behavior, ensuring that local actions (such as dorsal root ganglia reflexes) do not derail global objectives. However, G3 must also allow flexibility, preserving the Agent’s capacity for rapid, localized responses in dynamic environments.</p>
-<p>This interplay of control and autonomy is further enriched by the network’s emphasis on ecosystem outputs. Nodes such as <strong>ACh (acetylcholine), Strengths, Vulnerabilities, and Ecosystem</strong> in the Output/PhysicalAI layer highlight the consequences of these negotiated relationships. The Principal’s directives, filtered through G3, must ultimately optimize these outputs, balancing resilience, adaptability, and systemic vulnerabilities.</p>
-<p>The reframing of “Price” as <strong>Principal</strong> and the incorporation of N1-N5 as <strong>Agent</strong> elevate the discussion of G3 from mere neurobiological mechanics to a sophisticated analogy for systemic governance. Whether applied to neural systems, AI frameworks, or organizational dynamics, G3 exemplifies the delicate balance between centralized control and decentralized agency. This balance transforms the presynaptic ganglia into a generative hub for aligning goals, synthesizing inputs, and ensuring coherence across a complex, adaptive network.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -434,36 +421,36 @@ document.write(`
 <span class="c1"># Define the neural network structure; modified to align with &quot;Aprés Moi, Le Déluge&quot; (i.e. Je suis AlexNet)</span>
 <span class="k">def</span> <span class="nf">define_layers</span><span class="p">():</span>
     <span class="k">return</span> <span class="p">{</span>
-        <span class="s1">&#39;Pre-Input/WorldRules&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Price&#39;</span><span class="p">,</span> <span class="s1">&#39;Means&#39;</span><span class="p">,</span> <span class="s1">&#39;Ends&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Yellowstone/PerceptionAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;G1 &amp; G2&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Input/AgenticAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;N4, N5&#39;</span><span class="p">,</span> <span class="s1">&#39;N1, N2, N3&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Sympathetic&#39;</span><span class="p">,</span> <span class="s1">&#39;G3&#39;</span><span class="p">,</span> <span class="s1">&#39;Parasympathetic&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Ecosystem&#39;</span><span class="p">,</span> <span class="s1">&#39;Vulnerabilities&#39;</span><span class="p">,</span> <span class="s1">&#39;ACh&#39;</span><span class="p">,</span> <span class="s1">&#39;Strengths&#39;</span><span class="p">,</span> <span class="s1">&#39;Neurons&#39;</span><span class="p">]</span>
+        <span class="s1">&#39;Pre-Input/World&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Nvidia&#39;</span><span class="p">,</span> <span class="s1">&#39;Parallel&#39;</span><span class="p">,</span> <span class="s1">&#39;Time&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Yellowstone/PerceptionAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Interface&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Input/AgenticAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Digital-Twin&#39;</span><span class="p">,</span> <span class="s1">&#39;Enterprise&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Error&#39;</span><span class="p">,</span> <span class="s1">&#39;Space&#39;</span><span class="p">,</span> <span class="s1">&#39;Trial&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Loss-Function&#39;</span><span class="p">,</span> <span class="s1">&#39;Sensors&#39;</span><span class="p">,</span> <span class="s1">&#39;Feedback&#39;</span><span class="p">,</span> <span class="s1">&#39;Limbs&#39;</span><span class="p">,</span> <span class="s1">&#39;Optimization&#39;</span><span class="p">]</span>
     <span class="p">}</span>
 
 <span class="c1"># Assign colors to nodes</span>
 <span class="k">def</span> <span class="nf">assign_colors</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;G1 &amp; G2&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Interface&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;yellow&#39;</span>
-    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input/WorldRules&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span> <span class="s1">&#39;Ends&#39;</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input/World&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span> <span class="s1">&#39;Time&#39;</span><span class="p">]:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input/WorldRules&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span> <span class="s1">&#39;Means&#39;</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input/World&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span> <span class="s1">&#39;Parallel&#39;</span><span class="p">]:</span>
         <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
-    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input/AgenticAI&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;N1, N2, N3&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input/AgenticAI&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Enterprise&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Parasympathetic&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Trial&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;G3&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Space&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Sympathetic&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Error&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Neurons&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Optimization&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Strengths&#39;</span><span class="p">,</span> <span class="s1">&#39;ACh&#39;</span><span class="p">,</span> <span class="s1">&#39;Vulnerabilities&#39;</span><span class="p">]:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Limbs&#39;</span><span class="p">,</span> <span class="s1">&#39;Feedback&#39;</span><span class="p">,</span> <span class="s1">&#39;Sensors&#39;</span><span class="p">]:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Ecosystem&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Loss-Function&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
     <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>  <span class="c1"># Default color</span>
 
@@ -491,7 +478,7 @@ document.write(`
 
     <span class="c1"># Add edges (without weights)</span>
     <span class="k">for</span> <span class="n">layer_pair</span> <span class="ow">in</span> <span class="p">[</span>
-        <span class="p">(</span><span class="s1">&#39;Pre-Input/WorldRules&#39;</span><span class="p">,</span> <span class="s1">&#39;Yellowstone/PerceptionAI&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Yellowstone/PerceptionAI&#39;</span><span class="p">,</span> <span class="s1">&#39;Input/AgenticAI&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Input/AgenticAI&#39;</span><span class="p">,</span> <span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">,</span> <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">)</span>
+        <span class="p">(</span><span class="s1">&#39;Pre-Input/World&#39;</span><span class="p">,</span> <span class="s1">&#39;Yellowstone/PerceptionAI&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Yellowstone/PerceptionAI&#39;</span><span class="p">,</span> <span class="s1">&#39;Input/AgenticAI&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Input/AgenticAI&#39;</span><span class="p">,</span> <span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">,</span> <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">)</span>
     <span class="p">]:</span>
         <span class="n">source_layer</span><span class="p">,</span> <span class="n">target_layer</span> <span class="o">=</span> <span class="n">layer_pair</span>
         <span class="k">for</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">layers</span><span class="p">[</span><span class="n">source_layer</span><span class="p">]:</span>
@@ -504,7 +491,7 @@ document.write(`
         <span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span>
         <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.1&quot;</span>
     <span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Cost to Principle as Real World Node&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Archimedes&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="c1"># Run the visualization</span>
@@ -514,13 +501,13 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/00a85d1a8a7c2c50bf1a09f8df5d394f50c175f0e6f381047c33673aa9907a61.png" src="../../_images/00a85d1a8a7c2c50bf1a09f8df5d394f50c175f0e6f381047c33673aa9907a61.png" />
+<img alt="../../_images/464c93efa22d320ab5baf68f2b0a3aa8bf912ed3203c0ed93b7bfa0024f35109.png" src="../../_images/464c93efa22d320ab5baf68f2b0a3aa8bf912ed3203c0ed93b7bfa0024f35109.png" />
 </div>
 </div>
-<figure class="align-default" id="id2">
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/blanche.png"><img alt="../../_images/blanche.png" src="../../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 22 </span><span class="caption-text">G3, the presynaptic autonomic ganglia, arbitrate between the sympathetic &amp; parasympathetic responses via descending tracts that may suppress reflex arcs through G1 &amp; G2, the cranial nerve and dorsal-root ganglia. It’s a question of the relative price of achieving an end by a given means. This is optimized with regard to the neural architectures as well as the ecosystem.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">G3, the presynaptic autonomic ganglia, arbitrate between the sympathetic &amp; parasympathetic responses via descending tracts that may suppress reflex arcs through G1 &amp; G2, the cranial nerve and dorsal-root ganglia. It’s a question of the relative price of achieving an end by a given means. This is optimized with regard to the neural architectures as well as the ecosystem.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
