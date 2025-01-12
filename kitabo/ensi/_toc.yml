@@ -5,50 +5,52 @@ chapters:
   # Sing O Muse!
   - file: act1/part1
     sections:
-      - title: Mortality
+      - title: Referral
         file: act1/chapter1
-      - title: ESRD
+      - title: Screening
         file: act1/chapter2
-      - title: Frailty
+      - title: Eligibility
         file: act1/chapter3
         
   # Sing O Muse!
   - file: act2/part2
     sections:
-      - title: Hospitalization
+      - title: Principal
         file: act2/chapter1
-      - title: Length of Stay
+      - title: Agent
         file: act2/chapter2
-      - title: Outcomes
+      - title: Risk
         file: act2/chapter3
 
   # Apollo
   - file: act3/part3
     sections:
-      - title: WebApp
+      - title: 'Literature 🌊'
         file: act3/act1
         sections:
-          - title: Browser
+          - title: Estimate
             file: act3/part1/part1_1
-          - title: User
+          - title: Uncertainty
             file: act3/part1/part1_2
-          - title: Annotation
+          - title: Inference
             file: act3/part1/part1_3
-      - title: Deployment
+      - title: 'Personalize ⚓️'
         file: act3/act2
         sections:
-          - title: GitHub
+          - title: Patient
             file: act3/part2/part2_1
-          - title: Collaborative
+          - title: Careprovider
             file: act3/part2/part2_2
-          - title: Open-Source
+          - title: 'Student ☔️'
             file: act3/part2/part2_3
-      - title: Iteration
+      - title: 'Update 🧭'
         file: act3/act3
         sections:
-          - title: Latest Research
+          - title: Notification
             file: act3/part3/part3_1
-          - title: Bayesian Updates
+          - title: Backend
             file: act3/part3/part3_2
-          - title: Missingness and A Priori
+          - title: Feedback
             file: act3/part3/part3_3
+
+  - file: bibliography
